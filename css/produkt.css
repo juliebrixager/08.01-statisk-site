@@ -45,7 +45,7 @@ img {
   background-color: #f2f2f2; /* light grey background */
   border: none; /* remove black outline */
   border-radius: 12px; /* rounded corners */
-  padding: 12px 24px; /* bigger inside spacing */
+  padding: 12px 20px; /* bigger inside spacing */
   font-size: 18px;
   cursor: pointer;
 }
@@ -73,7 +73,7 @@ select {
 
 .basket-btn {
   width: 100%;
-  padding: 14px;
+  padding: 10px;
   border: none;
   border-radius: 14px;
   background: #f2f2f2;
