@@ -2,7 +2,7 @@
 
 const productContainer = document.querySelector(".product_list_container");
 
-fetch("https://kea-alt-del.dk/t7/api/products")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=50")
   .then((response) => response.json())
   .then((data) => {
     showProducts(data);
