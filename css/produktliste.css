@@ -50,3 +50,7 @@ img {
 .discount_badge {
   color: red;
 }
+
+.sold_out img {
+  opacity: 0.4;
+}
