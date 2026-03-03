@@ -26,7 +26,9 @@ img {
   }
 }
 
-.subtle {color: rgb(173, 173, 173);}
+.subtle {
+  color: rgb(173, 173, 173);
+}
 
 .product_list_container a {
   color: black;
@@ -43,4 +45,12 @@ img {
 
 .product_list_container a:active {
   color: black;
+}
+
+.discount_badge {
+  color: red;
+}
+
+.sold_out img {
+  opacity: 0.4;
 }
