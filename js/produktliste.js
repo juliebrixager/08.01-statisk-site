@@ -15,12 +15,13 @@ function showProducts(productsArr) {
     console.log("product", product.id);
 
     const hasDiscount = product.discount > 0;
+    const isSoldOut = product.soldout === 1;
 
-    productContainer.innerHTML += `<article class="smallProduct">
+    productContainer.innerHTML += `<article class="smallProduct ${isSoldOut ? "sold_out" : ""}">
           <div>
             <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="Ferrari" />
           </div>
-          <p class="soldouttext color_me_grey">SOLD OUT</p>
+         ${isSoldOut ? `<p class="soldouttext color_me_grey">SOLD OUT</p>` : ""}
           <h3>${product.productdisplayname}</h3>
           <p class="subtle">${product.articletype} | ${product.brandname}</p>
           <p class="price">${product.price},-</p>
@@ -34,7 +35,7 @@ function showProducts(productsArr) {
                 : ""
             }
           </div>
-          <a href="produkt.html">Read More</a>
+          <a href="produkt.html?id=${product.id}">Read More</a>
         </article>`;
   });
 }
