@@ -35,7 +35,7 @@ function showProducts(productsArr) {
                 : ""
             }
           </div>
-          <a href="produkt.html?id=${product.id}">Read More</a>
+          <a href="produkt.html?id=${product.id}" >Read More</a>
         </article>`;
   });
 }
