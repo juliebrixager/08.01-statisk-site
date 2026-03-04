@@ -33,8 +33,12 @@ img {
 }
 
 .size_and_purchase {
-  background-color: rgba(197, 197, 197, 0.771);
+  background-color: rgba(0, 119, 255, 0.575);
+  padding: 10px;
   color: white;
+}
+.productinformation {
+  padding: 10px;
 }
 
 .basketbutton {
@@ -60,6 +64,10 @@ img {
   justify-content: space-between; /* pushes apart */
   align-items: center;
   margin: 20px 0;
+}
+
+select:hover {
+  background-color: #e6e6e6;
 }
 
 select {

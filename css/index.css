@@ -61,13 +61,26 @@ a {
 
 .redr {
   color: rgb(0, 149, 255);
+  color: rgb(0, 119, 255);
+}
+
+.logo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo:hover {
+  opacity: 0.5;
 }
 
 .category_list_container a {
-  background-color: rgb(179, 179, 179);
+  background-color: rgba(0, 119, 255, 0.714);
   padding: 30px;
   gap: 3rem;
   color: white;
   display: flex;
   border-radius: 5px;
+}
+
+.category_list_container a:hover {
+  background-color: rgba(0, 119, 255, 0.357);
 }
