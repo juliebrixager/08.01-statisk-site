@@ -2,6 +2,10 @@
 
 const productContainer = document.querySelector(".product_list_container");
 
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+
+fetch(`https://kea-alt-del.dk/t7/api/products?limit=56&category=${category}`)
 fetch("https://kea-alt-del.dk/t7/api/products?limit=50")
   .then((response) => response.json())
   .then((data) => {
