@@ -11,8 +11,9 @@ img {
 .product_list_container {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem;
 }
 
 .productlist main h2 {
@@ -40,7 +41,7 @@ img {
 }
 
 .product_list_container a:hover {
-  color: black; /* or another hover color if you want */
+  color: rgba(0, 119, 255, 0.714);
 }
 
 .product_list_container a:active {
@@ -48,7 +49,7 @@ img {
 }
 
 .discount_badge {
-  color: red;
+  color: rgb(194, 6, 6);
 }
 
 .sold_out img {
