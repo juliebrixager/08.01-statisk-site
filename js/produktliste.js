@@ -13,6 +13,10 @@ if (selectedCategory) {
   categoryLabel.textContent = `/ ${selectedCategory}`;
 }
 
+
+
+
+
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=56&category=${category}`)
   .then((response) => response.json())
   .then((data) => {

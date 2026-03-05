@@ -89,3 +89,7 @@ a {
 .category_list_container a:hover {
   background-color: rgba(0, 119, 255, 0.357);
 }
+
+h1 {
+  font-weight: 200;
+}

@@ -16,15 +16,19 @@ function showProduct(product) {
     </article>
     <article class="productinformation">
       <h2>Product information</h2>
-      <h3>Model name</h3>
+      <h3>Model name:</h3>
       <p>${product.productdisplayname}</p>
-      <h3>Color</h3>
+      <h3>Product type:</h3>
       <p>${product.articletype}</p>
+      <h3>Brand:
       <h1>${product.brandname}</h1>
     </article>
     <article class="size_and_purchase">
       <h2>${product.productdisplayname}</h2>
       <p>${product.brandname} / ${product.articletype}</p>
+      <p>${product.price},- kr</p>
+      ${product.discount ? `<p>Now DKK ${Math.round(product.price * (1 - product.discount / 100))} ,-</p>` : ""}
+      ${product.soldout ? "<p>SOLD OUT</p>" : ""}
       <div class="size-row">
         <label for="size">Choose a size</label>
         <select id="size">
