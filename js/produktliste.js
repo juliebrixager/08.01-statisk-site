@@ -10,7 +10,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const selectedCategory = urlParams.get("category");
 
 if (selectedCategory) {
-  categoryLabel.textContent = `> ${selectedCategory}`;
+  categoryLabel.textContent = `/ ${selectedCategory}`;
 }
 
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=56&category=${category}`)

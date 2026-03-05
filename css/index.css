@@ -62,10 +62,15 @@ a {
 .redr {
   color: rgb(0, 149, 255);
   color: rgb(0, 119, 255);
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .logo {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .logo:hover {

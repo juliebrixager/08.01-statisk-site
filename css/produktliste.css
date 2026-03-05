@@ -55,3 +55,11 @@ img {
 .sold_out img {
   opacity: 0.4;
 }
+
+.product_list_container h2 {
+  font-weight: 200;
+}
+
+#category_label {
+  font-weight: 200;
+}
