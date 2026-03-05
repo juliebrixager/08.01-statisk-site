@@ -5,6 +5,14 @@ const productContainer = document.querySelector(".product_list_container");
 const params = new URLSearchParams(window.location.search);
 const category = params.get("category");
 
+const categoryLabel = document.getElementById("category_label");
+const urlParams = new URLSearchParams(window.location.search);
+const selectedCategory = urlParams.get("category");
+
+if (selectedCategory) {
+  categoryLabel.textContent = `> ${selectedCategory}`;
+}
+
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=56&category=${category}`)
   .then((response) => response.json())
   .then((data) => {
